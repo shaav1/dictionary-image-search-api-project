@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dictionary Search</title>
+		<style>
+			body, form{
+				margin:20px auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#word{
+				flex-grow:50;
+				margin: 0 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<form action="search" method="get">
+			<fieldset>
+				<legend>Word Definition and Picture</legend>
+				<label for="word">Word Lookup:</label>
+				<input id="word" name="word" type="text" />
+				<input type="submit" value="search"/>
+			</fieldset>
+		</form>
+	</body>
+</html>
